@@ -11,7 +11,8 @@ function App() {
       imagen: 'assets/sky.jpg',
       noticia: "Esta es la noticia número 1.",
       alt: "Imagen de un cielo anaranjado, como fondo de la noticia 1.",
-      numLikes: 20
+      numLikes: 20,
+      alt_avatar: "Imagen del avatar 1"
     },
     {
       id: 2,
@@ -21,7 +22,8 @@ function App() {
       imagen: 'assets/sea.jpg',
       noticia: "Esta es la noticia número 2.",
       alt: "Imagen de un cielo anaranjado, como fondo de la noticia 2.",
-      numLikes: 87
+      numLikes: 87,
+      alt_avatar: "Imagen del avatar 2"
     },
     {
       id: 3,
@@ -31,7 +33,8 @@ function App() {
       imagen: 'assets/tux.jpg',
       noticia: "Esta es la noticia número 3.",
       alt: "Imagen de un cielo anaranjado, como fondo de la noticia 3.",
-      numLikes: 7
+      numLikes: 7,
+      alt_avatar: "Imagen del avatar 3"
     },
     {
       id: 4,
@@ -41,7 +44,8 @@ function App() {
       imagen: 'assets/mario.jpg',
       noticia: "Esta es la noticia número 4.",
       alt: "Imagen de un cielo anaranjado, como fondo de la noticia 4.",
-      numLikes: 8514
+      numLikes: 8514,
+      alt_avatar: "Imagen del avatar 4"
     },
   ];
 
@@ -56,6 +60,7 @@ function App() {
         noticia={miNoticia.noticia}
         alt={miNoticia.alt}
         numLikes={miNoticia.numLikes}
+        alt_avatar={miNoticia.alt_avatar}
       />
     )
   );

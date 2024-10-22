@@ -17,10 +17,9 @@ import DialogActions from '@mui/material/DialogActions';
 import DialogContent from '@mui/material/DialogContent';
 import DialogContentText from '@mui/material/DialogContentText';
 import DialogTitle from '@mui/material/DialogTitle';
-import Button from '@mui/material/Button'
 import Grid from '@mui/material/Grid2'
 
-const Noticia = ({ avatar, titulo, fecha, imagen, noticia, alt, numLikes }) => {
+const Noticia = ({ avatar, titulo, fecha, imagen, noticia, alt, numLikes, alt_avatar }) => {
 
   const [liked, setLike] = useState(false);
   const [numLikesVariable, setNumLikes] = React.useState(numLikes);
@@ -57,7 +56,7 @@ const Noticia = ({ avatar, titulo, fecha, imagen, noticia, alt, numLikes }) => {
       
         <Grid container spacing={2} sx={{ mt: 2 }} justifyContent="flex-start">
             {/* Avatar */}
-            <Avatar src={avatar} sx={{ mb: 2 }}/>
+            <Avatar src={avatar} sx={{ mb: 2 }} alt={alt_avatar} title={alt_avatar}/>
             
             {/* Título y fecha */}
             <Typography variant="h6" component="div">
